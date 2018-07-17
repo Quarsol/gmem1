@@ -8,6 +8,10 @@ const resolutions = require("./routes/resolutions");
 
 app.use(cors());
 
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
+
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 

@@ -4,7 +4,7 @@ module.exports = {
     list(){
       return knex('resolution')
         .select()
-        .orderBy('id', 'desc')
+        .orderBy('id')
     },
     read(id){
       return knex('resolution')
